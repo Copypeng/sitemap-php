@@ -3,7 +3,9 @@
 What is sitemap-php ?
 ----------
 
-Fast and lightweight class for generating Google sitemap XML files and index of sitemap files. Written on PHP and uses XMLWriter extension (wrapper for libxml xmlWriter API) for creating XML files. XMLWriter extension is enabled by default in PHP 5 >= 5.1.2. If you having more than 50000 url, it splits items to seperated files. _(In benchmarks, 1.000.000 url was generating in 8 seconds)_
+Fast and lightweight class for generating sitemap XML files and index of sitemap files（use the Sitemap [protocol](http://www.sitemaps.org/index.html)）. Written on PHP and uses XMLWriter extension (wrapper for libxml xmlWriter API) for creating XML files. XMLWriter extension is enabled by default in PHP 5 >= 5.1.2. If you having more than 50000 url, it splits items to seperated files. _(In benchmarks, 1.000.000 url was generating in 8 seconds)_
+
+遵循标准sitemap协议，支持google，百度，yahoo，360，bing等搜索引擎．
 
 How to use
 ----------
@@ -93,4 +95,6 @@ sitemap-index.xml
 	 </sitemap>
 	</sitemapindex>
 	
-You need to submit sitemap-index.xml to Google Sitemaps.
+You need to submit sitemap-index.xml to the  search engine.
+
+你需要将生成好的　sitmap-index.xml 提交至搜索引擎．
